@@ -1,5 +1,5 @@
     <title>Manager Home</title>
-    <div class="offcanvas offcanvas-start w3-metro-dark-blue w3-cell" id="demo">
+    <div class="offcanvas offcanvas-start w3-metro-dark-blue w3-cell" *ngIf="hasLoggedIn() && getRole()=='manager'" id="demo">
         <div class="offcanvas-header">
             <h1 class="offcanvas-title">Menu</h1>
             <button type="button" class=" btn w3-metro-dark-blue w3-hover-blue" data-bs-dismiss="offcanvas">

@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import { User } from '../users/user.model';
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
 
   isLoggedIn: boolean = false;
 
  
+  role: string = "";
 
   constructor() { }
 
@@ -16,7 +19,10 @@ export class AuthService {
   }
 
   retreiveUserInfo(): void{
-    // return JSON.parse(sessionStorage.getItem("employee"));
+      let userData: any = sessionStorage.getItem("employee");
+      if(userData!=null){
+        return JSON.parse(userData);
+      }
   }
 
   removeUserInfo(): void{

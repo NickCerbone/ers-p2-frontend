@@ -6,9 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserServiceService {
-  url: string = "http://localhost:7474/";
+  url: string = "http://localhost:7474/employees";
+  
   constructor(private http: HttpClient) { }
   checkUser(user:User): Observable<User>{
-    return this.http.post<User>(this.url+'employees', user);
+    return this.http.post<User>(this.url, user);
   }
 }

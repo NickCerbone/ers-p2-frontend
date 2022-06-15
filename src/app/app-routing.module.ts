@@ -9,6 +9,7 @@ const routes: Routes = [
 {path:"", component: LoginComponent},
 {path:"login", component: LoginComponent},
 {path:'employee-home-display', component: EmployeeHomeDisplayComponent,canActivate:[AuthenticationGuard]}];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
