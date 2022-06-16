@@ -1,54 +1,59 @@
-    <title>Manager Home</title>
-    <div class="offcanvas offcanvas-start w3-metro-dark-blue w3-cell" id="demo">
-        <div class="offcanvas-header">
-            <h1 class="offcanvas-title">Menu</h1>
-            <button type="button" class=" btn w3-metro-dark-blue w3-hover-blue" data-bs-dismiss="offcanvas">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </button>
-        </div>
-        <div class="offcanvas-body">
-            <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
-                View All Employees
-            </a>
-            <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
-                View All Pending Requests
-            </a>
-            <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
-                View All Resolved Requests
-            </a>
-            <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
-                View All Requests
-            </a>
-        </div>
+<div>
+<title>Manager Home</title>
+<div class="offcanvas offcanvas-start w3-metro-dark-blue w3-cell" 
+    id="demo">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Menu</h1>
+        <button type="button" class=" btn w3-metro-dark-blue w3-hover-blue" data-bs-dismiss="offcanvas">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
     </div>
-    <div id="main">
-        <div class="w3-cell-row">
-            <div id="header" class="w3-container w3-cell w3-metro-dark-blue">
-                <div class="container-fluid mt-3 w3-cell">
-                    <button class="btn w3-metro-dark-blue w3-hover-blue" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#demo">
-                        <span class="material-symbols-outlined">
-                            menu
-                        </span>
-                    </button>
+    <div class="offcanvas-body">
+        <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
+            View All Employees
+        </a>
+        <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
+            View All Pending Requests
+        </a>
+        <a href="#" class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" style="text-align: left;">
+            View All Resolved Requests
+        </a>
+        <a class="w3-bar-item w3-button  w3-hover-blue w3-padding-large" routerLink="/view-all-requests"
+            style="text-align: left;">
+            View All Requests
+        </a>
+    </div>
+</div>
+<div id="main">
+    <div class="w3-cell-row">
+        <div id="header" class="w3-container w3-cell w3-metro-dark-blue">
+            <div class="container-fluid mt-3 w3-cell">
+                <button class="btn w3-metro-dark-blue w3-hover-blue" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#demo">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="w3-container w3-cell w3-center w3-metro-dark-blue">
+            <h1>Welcome</h1>
+        </div>
+        <div class="w3-cell w3-metro-dark-blue w3-padding-large">
+            <div class="w3-dropdown-click w3 w3-metro-dark-blue w3-right">
+                <button type="button" class="btn btn-primary dropdown-toggle w3-metro-dark-blue w3-hover-blue w3-right"
+                    data-bs-toggle="dropdown">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </button>
+                <div class="dropdown-menu w3-metro-dark-blue">
+                    <a class="dropdown-item w3-metro-dark-blue w3-hover-blue" href="#">Logout</a>
                 </div>
             </div>
-            <div class="w3-container w3-cell w3-center w3-metro-dark-blue">
-                <h1>Welcome</h1>
-            </div>
-            <div class="w3-cell w3-metro-dark-blue w3-padding-large">
-                <div class="w3-dropdown-click w3 w3-metro-dark-blue w3-right">
-                    <button type="button" class="btn btn-primary dropdown-toggle w3-metro-dark-blue w3-hover-blue w3-right" data-bs-toggle="dropdown">
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
-                    </button>
-                    <div class="dropdown-menu w3-metro-dark-blue">
-                        <a class="dropdown-item w3-metro-dark-blue w3-hover-blue" href="#">Logout</a>
-                    </div>
-                </div>
-            </div> 
         </div>
     </div>
+</div>
+</div>

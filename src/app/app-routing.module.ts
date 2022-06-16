@@ -4,13 +4,15 @@ import { AuthenticationGuard } from './authentication.guard';
 import { EmployeeHomeDisplayComponent } from './employee/employee-home-display/employee-home-display.component';
 import { LoginComponent } from './users/login/login.component';
 import { ManagerHomeDisplayComponent } from './manager/manager-home-display/manager-home-display.component';
+import { ViewAllRequestsComponent } from './manager/view-all-requests/view-all-requests.component';
 
 
 const routes: Routes = [
 {path:"", component: LoginComponent},
 {path:"login", component: LoginComponent},
 {path:'employee-home-display', component: EmployeeHomeDisplayComponent,canActivate:[AuthenticationGuard]},
-{path: 'manager-home-display', component: ManagerHomeDisplayComponent, canActivate:[AuthenticationGuard]}
+{path: 'manager-home-display', component: ManagerHomeDisplayComponent, canActivate:[AuthenticationGuard]},
+{path: 'view-all-requests', component: ViewAllRequestsComponent, canActivate:[AuthenticationGuard]}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
